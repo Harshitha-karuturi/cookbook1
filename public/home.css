@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --green: #27ae60;
+    --black: #2c2c54;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+::selection {
+    background: var(--green);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+}
+
+.h-1 {
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 9%;
+    text-align: center;
+}
+
+.logo {
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 3rem;
+    align-self: center;
+}
+
+.logo i {
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+.h-2 {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    position: relative;
+}
+
+.h-2 .navbar {
+    display: flex;
+    gap: 4rem;
+}
+
+.h-2 .navbar a {
+    padding: .5rem 1.5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.h-2 .navbar a:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+.h-2 .icons {
+    position: absolute;
+    right: 9%;
+}
+
+.h-2 .icons a {
+    font-size: 2.5rem;
+    color: var(--black);
+    padding-left: 1rem;
+}
+
+.h-2 .icons a:hover {
+    color: var(--green);
+}
+
+#menu-bar {
+    font-size: 3rem;
+    border-radius: .5rem;
+    border: .1rem solid var(--black);
+    padding: .8rem 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.Home {
+    background: url("cookbook-home2.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+
+.Home .content {
+    flex: 1 1 40rem;
+}
+
+.Home .content span {
+    font-size: 3rem;
+    color: #fdf7ef;
+}
+
+.Home .content h3 {
+    font-size: 2.1rem;
+    color:aliceblue;
+}
+
+#contact span {
+    font-size: 3rem;
+    color: var(--green);
+}
+
+#contact {
+    padding: 4rem 9%;
+    background-color: #f9f9f9;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 3rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+
+#contact p {
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+#contact a {
+    color: var(--green);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    color: var(--black);
+}
+
+
+.recipes {
+    padding: 4rem 4rem;
+    background: #fff;
+}
+
+.recipes .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.recipes .heading span {
+    color: var(--green);
+
+}
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding:0 2rem;
+}
+
+.recipe-container .box {
+    flex: 1 1 calc(33.333% - 2rem);
+    border: 2px solid darkgreen;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 0; 
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); 
+    box-sizing: border-box;
+}
+
+.recipe-container #label {
+    font-size: 3.5vmin;
+    margin: 0.5rem 0 1rem 0;
+    color: darkgreen;
+}
+.recipe-container #recipeimg {
+    border-radius: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.recipe-container #recipeimg:hover {
+    transform: scale(1.05);
+}
+
+.recipe-container #source {
+    font-size: 2.5vmin;
+}
+
+.recipe-container #resource {
+    text-decoration: none;
+    font-size: 2vmin;
+    color: darkgreen;
+    font-family: cursive;
+}
+.recipe-container #ingredients {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.recipe-container #head {
+    font-size: 1.5rem;
+}
+
+.recipe-container #footer {
+    background-color: darkgreen;
+    color: white;
+    margin: 0;
+}
+
+.recipe-container #count {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
+.footer .credit{
+    padding:2.5rem 1rem;
+    border-top:.1rem solid rgba(0,0,0,.1);
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.footer .credit span{
+    color:var(--green);
+
+}
+
+
+@media (max-width: 1200px) {
+    .recipe-container .box {
+        flex: 1 1 calc(50% - 2rem); 
+    }
+}
+
+@media (max-width: 768px) {
+    .recipe-container .box {
+        flex: 1 1 100%; 
+    }
+}

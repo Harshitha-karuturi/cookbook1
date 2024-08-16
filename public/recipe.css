@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#2c2c54;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+   
+}
+
+::selection{
+    background:var(--green);
+    color:#fff;
+}
+
+
+.h-1{
+    background: #eee;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 2rem 9%;
+    text-align: center;
+    font-size: 2rem;
+  
+}
+
+.logo{
+    color:var(--black);
+    font-weight: bolder;
+    font-size: 2rem;
+    align-self: center;
+    text-decoration: none;
+    
+}
+
+.logo i{
+    padding-right: .5rem;
+    color:var(--green);
+}
+
+.h-2{
+    background: #fff;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+    font-size: 1.6rem;
+    
+}
+
+.h-2 .navbar {
+    display: flex;
+    gap: 4rem; 
+    
+}
+
+.h-2 .navbar a{
+    padding: .5rem 1.5rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    color: var(--black);
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.h-2 .navbar a:hover{
+    background: var(--green);
+    color: #fff;
+    text-decoration: none;
+}
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.login-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:var(--green);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.login-link:hover {
+    background-color: green;
+}
+
+.login-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#menu-bar{
+    font-size: 3rem;
+    border-radius: .5rem;
+    border: .1rem solid var(--black);
+    padding: .8rem 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    width:100%;
+    margin:0 auto;
+    padding:2rem;
+}
+
+.container #search{
+    margin:0.5rem 0 0.5rem 0;
+    padding:0.7rem;
+    width:50%;
+    border:2px solid darkgreen;
+    outline:none;
+    border-radius:1rem;
+}
+
+.display{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:stretch;
+}
+
+.display .box{
+    width:20rem;
+    background-color:slate;
+    border:2px solid darkgreen;
+    border-radius:2rem;
+    padding:2rem;
+    margin:1rem;
+}
+
+#label{
+    font-size:3.5vmin;
+    margin:0.5rem 0 1rem 0;
+    color:darkgreen;
+}
+
+#recipeimg{
+    border-radius:0.5rem;
+    transition:transform 0.3s;
+}
+
+#recipeimg:hover{
+    transform:scale(1.05);
+}
+
+#source{
+    font-size:2.5vmin;
+}
+
+#resource{
+    text-decoration:none;
+    font-size:2vmin;
+    color:darkgreen;
+    font-family:cursive;
+}
+
+#ingredients{
+    margin:0;
+    font-size:1rem;
+}
+
+#head{
+    font-size:1.5rem;
+}
+
+#footer{
+    background-color:darkgreen;
+    color:white;
+    margin:0;
+}
+
+#count{
+    padding:1rem;
+    font-size:1rem;
+}
